@@ -26,6 +26,14 @@ for digit in processed_digits:
 
 # Verify that the sum of the digits is divisible by 10
 if total % 10 == 0:
-    print('Valid card number')
+    for number in card_number:
+        if number[0] == 3:
+            print('This is a valid Amex (American Express card')
+        elif number[0] == 4:
+            print('This is a Visa card')
+        elif number[0] == 5:
+            print('This is a valid Mastercard')
+        elif number[0] == 6:
+            print('This is a valid Discover card')
 else:
     print('Invalid card number')
